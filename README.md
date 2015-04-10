@@ -92,7 +92,6 @@
 
     ```css
     /* bad */
-    /* 默认值 */
     box-sizing: content-box;
 
     /* good */
@@ -107,7 +106,6 @@
   - 样式属性一个一行
 
     ```css
-
     /* bad */
     .body { background: #ddd; color: #333 }
 
@@ -120,6 +118,8 @@
     ```
 
 ### <a name="css-location"></a> 样式位置
+
+  - 每个样式都有各自的作用域
 
     ```css
     /* bad */
