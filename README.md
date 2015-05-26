@@ -19,6 +19,7 @@
   1. [引号](#quote)
   1. [判断和比较](#comparison-operators--equality)
   1. [变量命名约定](#naming-convention)
+  1. [变量和函数位置](#var-position)
 
 
 ### <a name="content-type"></a> HTML content type
@@ -265,4 +266,26 @@
     var good = new User({
       name: 'yup'
     })
+    ```
+
+### <a name="var-position"></a> 变量和函数位置
+
+  - 变量->函数->调用
+
+    ```javascript
+    // bad
+
+    var name = 'foo'
+    greet(name)
+
+    function greet(name) {
+      alert(name)
+    }
+
+    // good
+    var name = 'foo'
+    function greet(name) {
+      alert(name)
+    }
+    greet(name)
     ```
