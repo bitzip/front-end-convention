@@ -161,8 +161,8 @@
 
     ```javascript
     // bad
-    var dom = document.getElementById('foo')
-    dom.style.display = 'none'
+    var dom = document.getElementById('foo');
+    dom.style.display = 'none';
 
     // good
     var dom = document.getElementById('foo')
