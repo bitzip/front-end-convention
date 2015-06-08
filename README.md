@@ -5,7 +5,7 @@
 
   1. [HTML content type](#content-type)
   1. [HTML标签语义](#html-syntax)
-  1. [缩进](#indent)
+  1. [代码缩进](#indent)
   
 
 ## CSS
@@ -88,7 +88,7 @@
 
     ```
 
-### <a name="indent"></a> 缩进
+### <a name="indent"></a> 代码缩进
   - 使用四个空格（适用HTML、CSS、Javacript）
 
 
