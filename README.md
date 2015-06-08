@@ -5,6 +5,7 @@
 
   1. [HTML content type](#content-type)
   1. [HTML标签语义](#html-syntax)
+  1. [缩进](#indent)
   
 
 ## CSS
@@ -86,6 +87,10 @@
     </section>
 
     ```
+
+### <a name="indent"></a> 缩进
+  - 使用四个空格（适用HTML、CSS、Javacript）
+
 
 ### <a name="box-model"></a> 盒子模型
 
