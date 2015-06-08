@@ -6,6 +6,8 @@
   1. [HTML content type](#content-type)
   1. [HTML标签语义](#html-syntax)
   1. [代码缩进](#indent)
+  1. [页内CSS位置](#css-position)
+  1. [页内Javascript位置](#javascript-position)
   
 
 ## CSS
@@ -89,8 +91,61 @@
     ```
 
 ### <a name="indent"></a> 代码缩进
+
   - 使用四个空格（适用HTML、CSS、Javacript）
 
+
+### <a name="css-position"></a> 页内CSS位置
+
+  - 放在`<head>`标签内
+
+    ```html
+    /* bad */
+    <div>
+        <style>
+            .foo {
+                color: #000;
+            }
+        </style>
+    </div>
+
+    /* good */
+    <head>
+        <style>
+            .foo {
+                color: #000;
+            }
+        </style>
+    </head>
+
+    ```
+
+### <a name="javascript-position"></a> 页内Javascript位置
+
+  - `<script>` 根级代码不缩进
+
+    ```html
+    /* bad */
+    <section>
+        <div>
+            <h1>Foobar</h1>
+            <script>
+                $('h1').html('gotcha.')
+            </script>
+        </div>
+    </section>
+
+    /* good */
+    <section>
+        <div>
+            <h1>Foobar</h1>
+    <script>
+    $('h1').html('gotcha.')
+    </script>
+        </div>
+    </section>
+
+    ```
 
 ### <a name="box-model"></a> 盒子模型
 
