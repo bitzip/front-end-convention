@@ -33,11 +33,11 @@
     <!DOCTYPE HTML>
     <html>
     <head>
-        <meta charset="UTF-8">
-        <title></title>
+      <meta charset="UTF-8">
+      <title></title>
     </head>
     <body>
-        
+      
     </body>
     </html>
 
@@ -51,14 +51,14 @@
 
     <!-- bad -->
     <div class="nav">
-        <p><a>page1</a></p>
-        <p><a>page2</a></p>
+      <p><a>page1</a></p>
+      <p><a>page2</a></p>
     </div>
 
     <!-- good -->
     <ul class="nav">
-        <li><a>page1</a></li>
-        <li><a>page2</a></li>
+      <li><a>page1</a></li>
+      <li><a>page2</a></li>
     </ul>
 
 
@@ -72,27 +72,27 @@
     <!-- bad -->
     <!-- divist -->
     <div class="shipping-wrapper">
-        <div class="name"></div>
-        <div class="meta">
-            <div class="address"></div>
-        </div>
-        <div class="desc"></div>
+      <div class="name"></div>
+      <div class="meta">
+        <div class="address"></div>
+      </div>
+      <div class="desc"></div>
     </div>
 
     <!-- good -->
     <section class="wrapper">
-        <cite></cite>
-        <span class="meta">
-            <address></address>
-        </span>
-        <div class="desc"></div>
+      <cite></cite>
+      <span class="meta">
+        <address></address>
+      </span>
+      <div class="desc"></div>
     </section>
 
     ```
 
 ### <a name="indent"></a> 代码缩进
 
-  - 使用四个空格（适用HTML、CSS、Javacript）
+  - 使用两个空格（适用HTML、CSS、Javacript）
 
 
 ### <a name="css-position"></a> 页内CSS位置
@@ -102,20 +102,20 @@
     ```html
     /* bad */
     <div>
-        <style>
-            .foo {
-                color: #000;
-            }
-        </style>
+      <style>
+        .foo {
+          color: #000;
+        }
+      </yle>
     </div>
 
     /* good */
     <head>
-        <style>
-            .foo {
-                color: #000;
-            }
-        </style>
+      <style>
+        .foo {
+          color: #000;
+        }
+      </style>
     </head>
 
     ```
@@ -127,22 +127,22 @@
     ```html
     /* bad */
     <section>
-        <div>
-            <h1>Foobar</h1>
-            <script>
-                $('h1').html('gotcha.')
-            </script>
-        </div>
+      <div>
+        <h1>Foobar</h1>
+        <script>
+          $('h1').html('gotcha.')
+        </script>
+      </div>
     </section>
 
     /* good */
     <section>
-        <div>
-            <h1>Foobar</h1>
+      <div>
+        <h1>Foobar</h1>
     <script>
     $('h1').html('gotcha.')
     </script>
-        </div>
+      </div>
     </section>
 
     ```
@@ -157,7 +157,7 @@
 
     /* good */
     * {
-        box-sizing: border-box;
+      box-sizing: border-box;
     }
 
     ```
@@ -172,8 +172,8 @@
 
     /* good */
     .body {
-        background: #ddd;
-        color: #333 
+      background: #ddd;
+      color: #333 
     }
 
     ```
@@ -198,18 +198,18 @@
     ```css
     /* bad */
     .navigation
-        .h2
-            color: #333
-        width: 300px
-        display: none
+      .h2
+         color: #333
+      width: 300px
+      display: none
 
     /* good */
     .navigation
-        width: 300px
-        display: none
+      width: 300px
+      display: none
 
-        .h2
-            color: #333
+      .h2
+        color: #333
 
     ```
 
@@ -252,22 +252,22 @@
 
     // bad
     if (name !== '') {
-        // ...stuff...
+      // ...stuff...
     }
 
     // good
     if (name) {
-        // ...stuff...
+      // ...stuff...
     }
 
     // bad
     if (collection.length > 0) {
-        // ...stuff...
+      // ...stuff...
     }
 
     // good
     if (collection.length) {
-        // ...stuff...
+      // ...stuff...
     }
     ```
 
@@ -279,12 +279,12 @@
 
     // bad
     function q() {
-        // ...stuff...
+      // ...stuff...
     }
 
     // good
     function query() {
-        // ..stuff..
+      // ..stuff..
     }
     ```
 
@@ -294,15 +294,15 @@
     // bad
     var this_is_my_object = {}
     function c() {}
-        var u = new user({
-        name: 'Bob Parr'
+      var u = new user({
+      name: 'Bob Parr'
     })
 
     // good
     var thisIsMyObject = {}
     function thisIsMyFunction() {}
-        var user = new User({
-        name: 'Bob Parr'
+      var user = new User({
+      name: 'Bob Parr'
     })
     ```
 
@@ -313,16 +313,16 @@
     function user(options) {
       this.name = options.name
     }
-                                
+                              
     var bad = new user({
       name: 'nope'
     })
-                                
+                              
     // good
     function User(options) {
       this.name = options.name
     }
-                                
+                              
     var good = new User({
       name: 'yup'
     })
