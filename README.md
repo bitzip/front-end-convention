@@ -12,6 +12,7 @@
 
 ## CSS
   1. [盒子模型](#box-model)
+  1. [类命名](#css-class-naming)
   1. [样式分行](#css-line)
   1. [样式位置](#css-location)
   1. [stylus嵌套结构](#stylus-nested)
@@ -162,6 +163,24 @@
     }
 
     ```
+
+### <a name="css-class-naming"></a> 类命名
+
+  - 类名使用`-`连接符
+
+    ```css
+    /* bad */
+    .btn_save {
+      background: cyan
+    }
+
+    /* good */
+    .btn-save {
+      background: cyan
+    }
+
+    ```
+
 
 ### <a name="css-line"></a> 样式分行
 
