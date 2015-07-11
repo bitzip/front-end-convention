@@ -23,6 +23,7 @@
   1. [判断和比较](#comparison-operators--equality)
   1. [变量命名约定](#naming-convention)
   1. [变量和函数位置](#var-position)
+  1. [读取属性](#get-property)
 
 
 ### <a name="content-type"></a> HTML content type
@@ -348,4 +349,21 @@
       alert(name)
     }
     greet(name)
+    ```
+
+### <a name="get-property"></a> 读取属性
+
+  - 使用`点语法`读取属性
+
+    ```javascript
+    var person = {
+      name: 'Kelly'
+    }
+
+    // bad
+    person['name']
+
+    // good
+    person.name
+
     ```
